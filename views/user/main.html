@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://foundation.zurb.com/templates/blog.html -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+    <div class="large-9 columns" role="content" >
+        <article ng-repeat="x in message">
+            <h2><a ui-sref="article({articId:x._id})">{{x.name}}</a></h2>
+
+            <div class="row">
+                <div class="large-6 columns">
+                    <h3>{{x.description}}</h3>
+                </div>
+
+            </div>
+            <hr>
+        </article>
+
+    </div>
+
+
+
+</div>
+
+

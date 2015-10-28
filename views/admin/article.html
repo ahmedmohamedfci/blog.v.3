@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://foundation.zurb.com/templates/blog.html -->
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+    <ul class="button-group">
+        <li><textarea ng-model=message.name rows="2" cols="80"></textarea><br></li>
+        <li><textarea ng-model="message.description" rows="10" cols="80"></textarea></li><br>
+        <li><input type="submit" value="edit Article" ng-click="editArticle(message._id,message.name,message.description)"></li>
+    </ul>
+
+    <div class="large-9 columns" role="content" >
+        <article ng-repeat="comm in comments">
+            <h4>{{comm.comment}}</h4>
+
+            <hr>
+        </article>
+
+
+    </div>
+
+
+</div>
+
+

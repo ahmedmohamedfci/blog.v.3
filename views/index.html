@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head ><!-- CSS (load bootstrap) -->
+    <base href="/">
+    <title>A.M.LUCIFER's Blog</title>
+    <link rel="stylesheet" href="./views/looks/foundation.css">
+    <script src="./views/looks/modernizr.js"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+        .navbar { border-radius:0; }
+    </style>
+</head>
+
+<!-- apply our angular app to our site -->
+<body ng-app="blogapp">
+<table >
+    <tr>
+        <td width="20%"></td>
+        <td>
+<div class="row">
+    <div class="large-12 columns">
+        <div class="nav-bar right">`
+            <ul class="button-group" ng-controller="loginController">
+                <li><input type="text" name="user" placeholder="username" ng-model="user"></li>
+                <li>        <input type="password" name="pass" placeholder="password" ng-model="pass"></li>
+                <li><input type="submit" value="login" ng-click="login(user,pass)"></li>
+
+            </ul>
+        </div>
+        <h1>A.M.LUCIFER's <small> <a ui-sref="home">Blog</a></small></h1>
+        <hr>
+    </div>
+</div>
+
+<!-- NAVIGATION >
+
+    <div ng-controller="loginController">
+        <input type="text" name="user" placeholder="username" ng-model="user">
+        <input type="password1" name="pass" placeholder="password" ng-model="pass">
+        <input type="submit" value="login" ng-click="login(user,pass)">
+    </div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view></div>
+
+</div>
+
+<footer class="row">
+    <div class="large-12 columns">
+        <hr>
+        <div class="row">
+            <div class="large-6 columns">
+                <p>© Copyright no one at all. Go to town.</p>
+            </div>
+            <div class="large-6 columns">
+                <ul class="inline-list right">
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./../scripts/angular.js"></script>
+<script src="./../scripts/functions.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+</td>
+</tr>
+</table>
+</body>
+</html>
